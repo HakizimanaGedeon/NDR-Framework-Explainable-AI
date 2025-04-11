@@ -1,0 +1,11 @@
+
+### 8. **Push the Library to GitHub**:
+
+1. **Create a GitHub repository** (e.g., `ndr-library`).
+2. **Push your package** to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit of NDR library"
+   git remote add origin <repository_url>
+   git push -u origin main

@@ -1,0 +1,12 @@
+# NDR: Nomological Deductive Reasoning Framework
+
+This repository contains the implementation of the **Nomological Deductive Reasoning (NDR)** framework for explainable AI (XAI). NDR enables the use of **deductive logic** and **domain-specific knowledge** to generate human-readable explanations for AI predictions.
+
+## Installation
+
+To install the NDR framework, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/yourusername/ndr.git
+cd ndr
+pip install .
