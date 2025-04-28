@@ -71,8 +71,8 @@ feature_importance_df = feature_importance_df.sort_values(by='Importance', ascen
 print("Feature Importance:")
 print(feature_importance_df)
 
-# Step 11: Refined NDR Explanation
-def refined_ndr_explanation(prediction, instance):
+# Step 11: NDR Explanation
+def ndr_explanation(prediction, instance):
     explanation = []
     
     if prediction == 1:  # Good Credit
@@ -117,7 +117,7 @@ def refined_ndr_explanation(prediction, instance):
 
 # Step 12: Evaluate explanations for a few predictions
 def evaluate_kb_loyalty(instance, prediction):
-    explanation = refined_ndr_explanation(prediction, instance)
+    explanation = ndr_explanation(prediction, instance)
     
     # Check if the explanation follows the KB logic (monitor mismatch)
     if "Bad Credit" in explanation and prediction == 1:
